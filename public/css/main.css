@@ -1,15 +1,20 @@
-html { margin: 20px }
+html { margin: 0px }
 body {
   margin: 0 auto;
   font-family: 'Baskerville', Georgia, Times, serif;
   font-size: 20px;
   line-height: 30px;
-  padding: 15px;
+  box-shadow: 0px -3px 30px #111;
+  border: 1px solid #444;
   width: 720px;
-
+  background: url('/images/low_contrast_linen.png');
+  color: #ccc;
 }
 header, footer, section, article {
 	display: block;
+}
+body > section {
+  margin: 10px;
 }
 #content {
 }
@@ -36,7 +41,7 @@ a {
   color: #b83000;
 }
 h1 a {
-  color: black;
+  color: #bbb;
   text-decoration: none;
 }
 a:hover {
@@ -106,5 +111,5 @@ body > footer {
   margin-left: 10px;
 	font-style: italic;
   font-size: 18px;
-  color: #888;
+  color: #222;
 }
