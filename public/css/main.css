@@ -1,25 +1,50 @@
 html { margin: 0px }
 body {
   margin: 0 auto;
-  font-family: 'Baskerville', Georgia, Times, serif;
+  font-family: "Gill Sans MT", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  box-shadow: 0px -3px 30px #111;
-  border: 1px solid #444;
-  width: 720px;
-  background: url('/images/low_contrast_linen.png');
-  color: #ccc;
+  max-width: 720px;
+  background: url('/img/light_noise_diagonal.png');
+  color: #888;
 }
 header, footer, section, article {
 	display: block;
 }
+
+.row {
+  max-width: 720px;
+  position: relative;
+}
+
+.sidebar {
+  width: 144px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  max-width: 576px;
+  padding-left: 144px;
+}
+
+ul.nav {
+  letter-spacing: -4px;
+}
+
+ul.nav li {
+  letter-spacing: normal;
+  display: inline-block;
+  width: 33%;
+}
+
 body > section {
   margin: 10px;
 }
 #content {
 }
 #by {
-	font-style: italic;
   margin-right: 5px;
 	font-size: 28px;
 }
@@ -82,12 +107,6 @@ body > header > h1 {
   text-decoration: none;
 }
 .more a:hover { text-decoration: underline }
-body > header {
-	display: block;
-	padding-top: 30px;
-	line-height: 180px;
-	margin-bottom: 20px;
-}
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;
