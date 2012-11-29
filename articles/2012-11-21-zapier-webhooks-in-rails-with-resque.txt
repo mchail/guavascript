@@ -1,0 +1,10 @@
+--- 
+title: Zapier Webhooks in Rails with Resque
+date: 21/11/2012
+
+test
+
+<script src="https://gist.github.com/4125771.js?file=zapier_initializer.rb"></script>
+
+test
+
