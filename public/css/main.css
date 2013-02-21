@@ -48,7 +48,7 @@ a:hover {
 	margin-bottom: 0;
 }
 .post {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .post:last-child {
 	margin-bottom: 10px;
@@ -66,6 +66,11 @@ a:hover {
 	text-decoration: none;
 }
 .more a:hover { text-decoration: underline }
+
+header {
+	margin-bottom: 20px;
+}
+
 header h1 {
 	display: inline;
 }
