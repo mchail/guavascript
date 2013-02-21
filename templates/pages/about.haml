@@ -1,0 +1,22 @@
+.row
+	.three.columns
+		.avatar-container
+			.card
+				.front
+					%img.avatar{src: "http://gravatar.com/avatar/8381fa8ca53a0a8152df93af52b550f9?s=160", height: 160, width: 160}
+				.back
+					%img.avatar{src: "/img/scubasteve.png", height: 160, width: 160}
+	.nine.columns
+		%p
+			Hi! My name is Steve McHail. I'm an engineer currently living in San Francisco, California. I spend my time solving problems. Check out my
+			%a{href: "http://github.com/mchail"} github
+			page to browse around my latest work, and drop me a line at
+			%a.email
+			to get in touch.
+
+:javascript
+	$(document).ready(function() {
+		var $email = $('.email');
+		var email = 'mchail' + '@' + 'gmail' + '.com';
+		$email.text(email).attr('href', 'mailto:' + email);
+	});
