@@ -1,5 +1,6 @@
 
 require 'toto'
+require 'haml'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/img', '/favicon.ico', '/robots.txt'], :root => 'public'
@@ -18,15 +19,24 @@ toto = Toto::Server.new do
   # set [:setting], [value]
   # 
   set :author,    "Steve McHail"
-  set :title,     "Guavascript"                   # site title
+  set :title,     "mchail"                   # site title
   # set :root,      "index"                                   # page to load on /
   set :markdown,  :smart                                    # use markdown + smart-mode
-  set :disqus,    "guavascript"                                     # disqus id, or false
-  set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
+  set :disqus,    "mchail"                                     # disqus id, or false
+  set :summary,   :max => 200, :delim => /~/                # length of article summary and delimiter
   set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
 
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+
+  set :to_html,     lambda {|path, page, ctx|
+    ::Haml::Engine.new(File.read("#{path}/#{page}.haml"), :format => :html5, :ugly => true).render(ctx)
+  }
+
+  set :error do |code|
+    ::Haml::Engine.new(File.read("templates/pages/#{code}.haml"), :format => :html5, :ugly => true).render(@context)
+  end
+  
 end
 
 run toto
