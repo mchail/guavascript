@@ -4,7 +4,7 @@ date: 20/02/2013
 
 At [Perfect Audience](https://www.perfectaudience.com), we think the combination of [Zapier](http://www.zapier.com) + [Hipchat](http://www.hipchat.com) is the best thing since sliced arrays. Our team keeps several Hipchat channels open to provide us with realtime notification feeds - we see user signups, activations, deactivations, etc right as they happen. This gives us a real-world feel for what's happening day-to-day and allows us to act quickly if we see something has gone wrong.
 
-We're also fans of resque for queueing up background work. It's dead-simple to get started with, and has a great admin interface to let you track performance and see job history.
+We're also fans of [resque](https://github.com/defunkt/resque) for queueing up background work. It's dead-simple to get started with, and has a great admin interface to let you track performance and see job history (which is easily mountable right inside of your existing Rails app).
 
 Let's create a resqued-Zapier-webhook that tells us when a user selects his/her favorite beer preference (this is not yet a real feature in Perfect Audience, but why not?). Here's how we do it:
 
