@@ -39,19 +39,19 @@ Make these modifications in your **Gemfile** to include resque and resque-histor
 
 Put this file in **$RAILS_ROOT/config/** and call it **zap_ids.yml**. This file will hold your unique Zapier webhook IDs (the number at the end of the URL that looked like https://zapier.com/hooks/WebHookAPI/?sid=12345).
 
-<script src="https://gist.github.com/4125771.js?file=zap_ids.yml"></script>
+<script src="http://gist.github.com/4125771.js?file=zap_ids.yml"></script>
 
 Put this file in **$RAILS_ROOT/config/initializers/** and call it **zapier_initializer.rb**. It loads up your Zapier webhook IDs into an object we will access later.
 
-<script src="https://gist.github.com/4125771.js?file=zapier_initializer.rb"></script>
+<script src="http://gist.github.com/4125771.js?file=zapier_initializer.rb"></script>
 
 Put this file in **$RAILS_ROOT/app/workers/** and call it **zapier.rb**. This class handles the meat of our little project. It allows us to, in one line, queue up a zap to be processed by Resque, sent to Zapier, and ultimately displayed via Hipchat. That call might look as simple as **Zapier.zap(:channel, {key: :value})**.
 
-<script src="https://gist.github.com/4125771.js?file=zapier.rb"></script>
+<script src="http://gist.github.com/4125771.js?file=zapier.rb"></script>
 
 Here is a slightly longer version continuing our example. This file goes in **$RAILS_ROOT/app/models/user.rb**.
 
-<script src="https://gist.github.com/4125771.js?file=user.rb"></script>
+<script src="http://gist.github.com/4125771.js?file=user.rb"></script>
 
 You probably noticed that I'm triggering the **see_if_favorite_beer_changed** method using a Rails callback. The method uses ActiveRecord's "dirty" module to let us check if a certain attribute was changed before we commit the changes to the database.
 
