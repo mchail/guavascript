@@ -7,15 +7,19 @@ header, footer, section, article {
 	display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, body, p, article, section {
 	font-family: "Open Sans", "Nunito", arial, helvetica, sans-serif;
-	font-weight: normal;
+	font-weight: 300;
 }
 
 body, p, ul, li, section, article {
 	/*font-family: "Open Sans", "Nunito", arial, helvetica, sans-serif;*/
 	font-weight: 300;
 	font-size: 18px;
+}
+
+#articles, #article {
+	margin: 0 10px;
 }
 
 #content {
@@ -80,7 +84,7 @@ body > footer {
 	font-style: italic;
 	font-size: 12px;
 	color: #222;
-	margin: 20px 0;
+	margin: 20px 0 20px 10px;
 }
 
 .content li {
