@@ -1,6 +1,0 @@
---- 
-title: Setting up the Toto blog engine on heroku's cedar stack
-date: 08/07/2012
-
-Once upon a time...
-

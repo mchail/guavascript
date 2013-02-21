@@ -1,9 +1,0 @@
---- 
-author: Steve McHail
-title: How HAML changed my life
-date: 09/07/2012
-
-Dear Jordan,
-
-This one's for you.
-
