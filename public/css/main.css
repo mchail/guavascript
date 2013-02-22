@@ -143,3 +143,13 @@ code {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
+
+.share {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.share .fb-like {
+	top: -4px;
+	left: -25px;
+}

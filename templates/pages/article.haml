@@ -5,6 +5,10 @@
 			%span.date= date
 	%section.content
 		= body
+	.share
+		%a.hn-share-button{href: "http://news.ycombinator.com/submit"}
+		%a.twitter-share-button{href: "https://twitter.com/share"}
+		.fb-like{"data-send" => false, "data-layout" => :button_count, "data-width" => 450, "data-show-faces" => false}
 	%section.comments
 		- if @config[:disqus]
 			#disqus_thread
@@ -15,3 +19,8 @@
 			%a.dsq-brlink{href: "http://disqus.com"}
 				blog comments powered by
 				%span.logo-disqus Disqus
+
+%script{src: "//hnbutton.appspot.com/static/hn.min.js", type: "text/javascript", async: :async}
+%script{src: "//platform.twitter.com/widgets.js", type: "text/javascript", async: :async}
+#fb-root
+%script{src: "//connect.facebook.net/en_US/all.js#xfbml=1", type: "text/javascript", async: :async}

@@ -11,7 +11,13 @@
 		%script{type: "text/javascript", src: "/js/lib/foundation.min.js"}
 		%link{rel: :alternate, type: "application/atom+xml", title: "#{title} - feed", href: "/index.xml"}
 		%meta{"http-equiv" => "Content-Type", content: "text/html; charset=UTF-8"}
-		%title .
+		%title
+			- if @path == 'index'
+				guavascript
+			- elsif @path.split('/').compact.length == 4
+				= "#{title} - guavascript"
+			- else
+				= "#{@path} - guavascript"
 	%body
 		%header
 			%nav.top-bar
