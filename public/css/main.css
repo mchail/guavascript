@@ -12,6 +12,11 @@ h1, h2, h3, h4, h5, h6, body, p, article, section {
 	font-weight: 300;
 }
 
+h2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
 body, p, ul, li, section, article {
 	/*font-family: "Open Sans", "Nunito", arial, helvetica, sans-serif;*/
 	font-weight: 300;
