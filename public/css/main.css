@@ -153,3 +153,8 @@ code {
 	top: -4px;
 	left: -25px;
 }
+
+#article .content img {
+	display: block;
+	margin: auto;
+}
