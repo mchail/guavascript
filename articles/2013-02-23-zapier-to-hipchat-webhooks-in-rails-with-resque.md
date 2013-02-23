@@ -1,6 +1,6 @@
 --- 
 title: Zapier-to-Hipchat Webhooks in Rails with Resque
-date: 20/02/2013
+date: 23/02/2013
 
 At [Perfect Audience](https://www.perfectaudience.com), we think the combination of [Zapier](http://www.zapier.com) + [Hipchat](http://www.hipchat.com) is the best thing since sliced arrays. Our team keeps several Hipchat channels open to provide us with realtime notification feeds - we see user signups, activations, deactivations, etc right as they happen. This gives us a real-world feel for what's happening day-to-day and allows us to act quickly if we see something has gone wrong.
 
