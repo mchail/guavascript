@@ -6,7 +6,7 @@ At [Perfect Audience](https://www.perfectaudience.com), we think the combination
 
 We're also fans of [resque](https://github.com/defunkt/resque) for queueing up background work. It's dead-simple to get started with, and has a great admin interface to let you track performance and see job history (which is easily mountable right inside of your existing Rails app).
 
-Let's create a resqued-Zapier-webhook that tells us when a user selects his/her favorite beer preference (this is not yet a real feature in Perfect Audience, but why not?). Here's how we do it:
+Let's create a resqued-Zapier-webhook that tells us when a user selects his/her favorite beer preference (this is not yet a real feature in Perfect Audience, but why not?). Let's make a Zapchat. Here's how we do it:
 
 ## Prerequisites
 
@@ -68,5 +68,6 @@ Et, voila! Our message is processed by Resque and fed to Zapier, and we know rig
 
 ![final product](http://mchail.github.com/guavascript/images/zapier-hipchat/final_product.png)
 
-This is a powerful pattern for us. Besides user actions, we use it to show us summary data after a long-running cron job completes. Our team processes a fair amount of data each day to populate our analytics dashboards. When the numbers have been crunched, Hipchat gives us a friendly message.
+This is a powerful pattern for us. We use it for more than just user action notifications; when a cron job completes, or new analytics are available from our data providers, we use zapchat to notify the team (often with included summary metrics). The chat log is cleaner and less obtrusive than email, and the notification chatrooms give us a great way to discuss new data right as it comes in.
 
+Let me know how you use Zapier and Hipchat with your team!
