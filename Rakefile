@@ -2,11 +2,11 @@ require 'toto'
 
 @config = Toto::Config::Defaults
 
-task :default => :new
+task :default => :article
 
 desc "Create a new article."
-task :new do
-  title = ask('Title: ')
+task :article do
+  title = ask('Article title: ')
   slug = title.empty?? nil : title.strip.slugize
 
   article = {'title' => title, 'date' => Time.now.strftime("%d/%m/%Y")}.to_yaml
@@ -22,6 +22,27 @@ task :new do
     toto "an article was created for you at #{path}."
   else
     toto "I can't create the article, #{path} already exists."
+  end
+end
+
+desc "Create a new project."
+task :project do
+  title = ask('Project title: ')
+  slug = title.empty?? nil : title.strip.slugize
+
+  project = {'title' => title, 'date' => Time.now.strftime("%d/%m/%Y")}.to_yaml
+  project << "\n"
+  project << "I made this thing...\n\n"
+
+  path = "#{Toto::Paths[:projects]}/#{Time.now.strftime("%Y-%m-%d")}#{'-' + slug if slug}.haml"
+
+  unless File.exist? path
+    File.open(path, "w") do |file|
+      file.write project
+    end
+    toto "a project was created for you at #{path}."
+  else
+    toto "I can't create the project, #{path} already exists."
   end
 end
 
