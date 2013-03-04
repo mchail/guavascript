@@ -12,6 +12,7 @@ GEM
   specs:
     builder (3.0.0)
     haml (3.1.6)
+    newrelic_rpm (3.4.0)
     rack (1.5.2)
     rdiscount (1.6.8)
 
@@ -21,5 +22,6 @@ PLATFORMS
 DEPENDENCIES
   builder
   haml
+  newrelic_rpm
   rdiscount
   toto!
