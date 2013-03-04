@@ -10,6 +10,10 @@ if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
 
+if ENV['RACK_ENV'] == 'production'
+  require 'newrelic_rpm'
+end
+
 #
 # Create and configure a toto instance
 #
