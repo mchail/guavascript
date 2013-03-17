@@ -102,7 +102,7 @@ Every Unix-based computer (including Macs) comes with a file of dictionary words
 
 ## Using only the home row
 
-    grep -iP "^[qwertyuiop]+$" /usr/share/dict/words | awk '{ print length(), $0 | "sort -nr" }' | head
+    grep -iP "^[asdfghjkl]+$" /usr/share/dict/words | awk '{ print length(), $0 | "sort -nr" }' | head
 <ul class="words">
   <li>
   	<span class="length">
