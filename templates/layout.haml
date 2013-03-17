@@ -15,9 +15,9 @@
 			- if @path == 'index'
 				guavascript
 			- elsif @path.split('/').compact.length == 4
-				= "#{title} - guavascript"
+				= "#{title}"
 			- else
-				= "#{@path} - guavascript"
+				= "#{@path}"
 	%body
 		%header
 			%nav.top-bar
