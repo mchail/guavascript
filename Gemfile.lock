@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/mchail/toto.git
-  revision: 7af9a057ad422c591ff2b70fbd425d50dffb0ebc
+  revision: cc625d03912358eeaeaf0246de7bb03ea771a5cc
   specs:
-    toto (0.4.9)
+    toto (0.5.0)
       builder
       rack
       rdiscount
@@ -10,7 +10,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    builder (3.0.0)
+    builder (3.2.0)
     haml (3.1.6)
     newrelic_rpm (3.4.0)
     rack (1.5.2)
@@ -23,5 +23,5 @@ DEPENDENCIES
   builder
   haml
   newrelic_rpm
-  rdiscount
+  rdiscount (= 1.6.8)
   toto!
