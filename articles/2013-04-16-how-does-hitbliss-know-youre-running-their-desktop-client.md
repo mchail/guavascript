@@ -2,7 +2,7 @@
 title: How Does Hitbliss Know You're Running Their Desktop Client?
 date: 16/04/2013
 
-[Hitbliss](http://www.hitbliss.com) is a new video streaming service. They have a fresh take on the ad-supported-movie-rental model; you watch the ads up front, earn money, and use your earnings to rent from their library. Their catalog is solid, so I've been giving their service a shot this month.
+[Hitbliss](http://www.hitbliss.com) is a new video streaming service. They have a fresh take on the ad-supported-movie-rental model: you watch the ads up front, earn money, and use your earnings to rent from their library. Their catalog is solid, so I've been giving their service a shot this month.
 
 Hitbliss ships a native desktop app (a flash container) to stream the video content. Their website merely serves as a marketing page and catalog. When you browse the selections on [hitbliss.com](hitbliss.com), clicking on a "View in Hitbliss" link will either show the desktop app, if you have it running, or direct you to a download page. I was curious how the website knew whether I had the app open. Here's what I found.
 
