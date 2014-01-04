@@ -6,7 +6,7 @@ date: 22/02/2013
 
 ## conditionally log against a debug query param
 
-## log, info, error
+## log, info, warn, error
 
 ## grouping log messages
 
