@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/mchail
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mchail.com
+  * I am mchail (https://keybase.io/mchail) on keybase.
+  * I have a public key with fingerprint 0217 CCDB A934 DCD5 7444  F922 21F5 B443 568B 6E57
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "0217ccdba934dcd57444f92221f5b443568b6e57",
+            "host": "keybase.io",
+            "key_id": "21f5b443568b6e57",
+            "kid": "0101edcfa3089aa389a0fbf44b6a2190742a4ceb4b18019a939617557974e418ff450a",
+            "uid": "f1b9a3b3c6ada2bdd5470286c8d78119",
+            "username": "mchail"
+        },
+        "service": {
+            "hostname": "mchail.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1428468274,
+    "expire_in": 157680000,
+    "prev": "32e8f91c195bfc1c10f061497a959921846e11a5d971d4204ab88b2ef3512f76",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMIbAnicbVJrSBVBFL43e+jtZU9BKGyRIpLrzuzszu41gtQgevjDKMUe15nZWV3U
+3eu9V8vKsgc9CEGiIogixF5QImWoSWQpUYkQpUEUVIRUVAh1jR5EzUr9CJofc5jv
+fN835xxO39QkX8C/YLQ9b8MRp8jff3tpjW995lW4Q6KuWSeFdkgVfCxYtlPGo5Go
+7cSlkCRDgBkzKTEUZDJTxQghy4AQAkulCCmqplONq1jKksrdmKcQNpTEeNB2BSYe
+YdsU6H/4FWMJGciAm8wiiqwbhCjiki1qIUQ1AoEhYwQJYpwiCnQZGKIOQwNYVbGB
+EUdAtyykykTY1YzZWYAaRKEK04hJIDVNFWEZ6hrTTawDYHjEGI86pIoLdhUrJ3al
+VJ8lCazWZtwbgNfHP/kgc6uELhJ14y5zKwVeHo9HQp4sXhfxeFs5Df9xCFPbMcUI
+haCWR2O260ghIJgsbnuWAEEdaTrEKEvi2yJ2lIdtj6FiTZfF8b7htcJSgVy3DMCA
+oVKLiShbsgaQgYmhGgYEwoUDQFTTwMBEUEaE6jqF3FJUAC2sSV5P1Y4rhRRRJikT
+ljG7zCHxmiiX6u/0bBrv8wd8EyeM85bAF0hJ/bsae+Yk+5r2ZfQPr+9uOBo+eKlo
+4uqPT4t7r3U23GqvGEnLiGy/WJL9vn7o2MxArGHujyPnnRRt8cNBdIUV4uUf1ob2
+dbX2vmYL+2sL/d/m4pyz5zJn9zQdTZs1P/vEpF/LBl/evH9qzYbhjFHnAE49tGW0
++ULb5MSQNuVMy6cXaR3Ps9Uv7YH8WE5Jbv6pguO3d+Uumr7z2ZrSvOpXPfDRyN3M
+4L3980rPl1wfvriuZ+Vq8KB4xZvDS98OjF4+uSV47PHu9Jed7ak/k5ydk7tbxyd/
+rm7BI4051d3NN5bsbcr9vlE/1xbsq+tiMzY/G2hJKexIP51If2I1TksEGldV9rU9
+LUm8+7qwoGDgN978IzI=
+=h9L7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mchail
+
+==================================================================
